@@ -14,8 +14,12 @@
         Эксклюзивность туров включает по вашему желанию индивидуальный маршрут, визиты в престижные винные дома с уникальными дегустациями вин, и посещения гастрономических ателье: сыроварни, шоколадные производства, 
         трюфельные фермы, полёты на частных самолетах, прогулки на лошадях, пешеходные или велосипедные променады и т.д по вашему запросу.">
     <meta property="og:url" content=""> <!--Заполнить-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet"> <!--Font-->
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!--Slider-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!--Slider-->
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
 
     <title>Victoria Proia</title>
@@ -25,20 +29,59 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <nav class="header__left">
-                    <a class="header__link" href="/">Главная</a>
-                    <a class="header__link" href="./pages/tours.html">Экскурсии</a>  
-                    <a class="header__link" href="./pages/about.html">Обо мне</a>    
-                </nav>
-                <div class="header__right">
-                    <a class="header__link" href="tel:+33 623 29 25 15">+33 623 29 25 15</a>
-                    <a class="header__link" href="mailto:proiavictoria123@gmail.com?subject=Экскурсия">proiavictoria123@gmail.com</a>
+                <div class="header__body">
+                    <nav class="header__left">
+                        <a class="header__link" href="/">Главная</a>
+                        <a class="header__link" href="./pages/tours.html">Экскурсии</a>  
+                        <a class="header__link" href="./pages/about.html">Обо мне</a>    
+                    </nav>
+                    <div class="header__right">
+                        <a class="header__link" href="https://wa.me/33 623 29 25 15">+33 623 29 25 15</a>
+                        <a class="header__link" href="mailto:proiavictoria123@gmail.com?subject=Экскурсия">proiavictoria123@gmail.com</a>
+                    </div>
                 </div>
             </div>
         </header>
 
         <main class="main">
+            <section class="main__who">
+                <div class="container">
+                    <div class="main__who-body">
+                        <div class="main__who-left">
+                            <h1 class="main__who-title title">Виктория Пройя <br> Частный гид </h1>
+                            <h4 class="main__who-txt">Ваш отдых со мной подарит вам яркие впечатления и весёлые приключения!</h4>
+                            <a class="main__who-btn" href="mailto:proiavictoria123@gmail.com?subject=Экскурсия">Записаться на экскурсию</a>
+                        </div>
+                        <img class="main__who-img" src="./src/main-portrait.jpeg" alt="Victoria's photo">
+                    </div>
+                </div>
+            </section>
+            <section class="tour">
+                <div class="container">
 
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container">
+                    <div class="reviews__body">
+                        <div class="reviews__slider">
+                            <div class="reviews__block">
+                                <p class="reviews__name">Ольга</p>
+                                <p class="reviews__txt">Вспоминая наше путешествие по Бургундии и Шампани, всегда рассказываю друзьям о замечательном гиде - сомелье Виктории. 
+                                    От всей нашей семейной команды хочу поблагодарить Викторию за прекрасную организацию, ту удивительную интеллектуальную и доброжелательную атмосферу которая сопровождала наше путешествие. 
+                                    Мы были по настоящему увлечены посещая дегустации, винодельни и дома шампанского. 
+                                    Такие яркие и радостные воспоминания надолго остаются в памяти. Спасибо.
+                                    Ольга, Дмитрий, Егор, Полина. Май 2018г.</p>
+                            </div>
+                            <div class="reviews__block">
+                                <p class="reviews__name">Татьяна</p>
+                                <p class="reviews__txt">Огромное спасибо Виктории за поездку в Анси. Экскурсия была прекрасно организована, мы увидели этот небольшой город на озере с таких ракурсов, 
+                                    что осталось впечатление о путешествии в целую страну со старинными замками, горным ландшафтом, местной кухней. Общение с Викторией было, с одной стороны, очень познавательным, благодаря её эрудиции и любознательности, а с другой стороны, легким и приятным, иногда даже на хорошем французском языке.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
@@ -53,8 +96,16 @@
             </div>
         </footer>
     </div>
-    
-    <script src="./js/main.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!--Slider-->
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Slick Slider CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
