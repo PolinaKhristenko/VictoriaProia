@@ -125,6 +125,13 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     font-size: 3rem;
 }
 
+.group__title  {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
 /* Header */
 
 
@@ -225,16 +232,6 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 
 .reviews {
     margin-top: 40px;
-}
-
-.reviews__title  {
-    margin: 0 auto;
-    width: fit-content;
-}
-
-.reviews__title {
-    display: flex;
-    align-items: center;
 }
 
 .reviews__body {
