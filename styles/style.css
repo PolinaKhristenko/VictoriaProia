@@ -81,6 +81,7 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 .title {
     font-weight: 600;
     font-family: 'Playfair Display';
+    font-size: 4rem;
 }
 
 .hover-under {
@@ -135,7 +136,7 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 .header__right {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 30px;
 }
 
 /* Main */
@@ -144,6 +145,14 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 .main {
     margin-top: 130px;
 }
+
+.main__who-left {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
 .main__who {
 }
 
@@ -151,11 +160,13 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     color: var(--main-brown);
     padding: 10px 5px;
     border: 1px solid var(--main-brown);
+    max-width: fit-content;
 }
 
 .main__who-body {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .main__who-img {
@@ -168,6 +179,18 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 }
 
 .main__who-txt {
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 70%;
+}
+
+.reviews {
+    margin-top: 40px;
+}
+
+.reviews__title  {
+    margin: 0 auto;
+    width: fit-content;
 }
 
 /* Footer */
