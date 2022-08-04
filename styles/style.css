@@ -22,7 +22,7 @@ body {
 }
 
 :root {
-    --main-brown: #3b2f17;;
+    --main-brown: #3b2f17;
     --main-beige: #ede0da;
     --main-blue: #1488DC;
     --main-black: #1B1B1B;
@@ -117,11 +117,16 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     margin-right: 20px;
 }
 
+.handwtiting {
+    font-family: 'Pinyon Script';
+    font-size: 3rem;
+}
+
 /* Header */
 
 
 .header {
-    padding: 30px 0;
+    padding: 20px 0;
     position: fixed;
     background-color: var(--main-beige);
     width: 100%;
@@ -131,6 +136,7 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 .header__body {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -164,6 +170,8 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     display: flex;
     flex-direction: column;
     max-width: 50%;
+    align-items: center;
+    text-align: center;
 }
 
 .main__who {
@@ -174,6 +182,13 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     padding: 10px 5px;
     border: 1px solid var(--main-brown);
     max-width: fit-content;
+    font-size: 1.8rem;
+    border-radius: 4px
+}
+
+.main__who-btn:hover {
+    background-color: #c4b29a;
+    color: var(--main-beige);
 }
 
 .main__who-body {
@@ -247,14 +262,18 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     width: 20px;
     height: 20px;
     color: var(--main-brown);
-
-
+    transition: all 0.3s;
     font-size: 0;
     cursor: pointer;
     padding: 0;
     padding: 20px;
 }
 
+
+.slick-prev:hover,
+.slick-next:hover {
+    opacity: 0.5;
+}
 
 .slick-prev {
     border-bottom: 0.4rem solid;
@@ -267,7 +286,6 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     background-color: transparent;
     left: 0;
 }
-
 
 .slick-next {
     border-bottom: 0.4rem solid;
@@ -286,7 +304,8 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 
 .footer {
     padding: 20px 0;
-    border-top: 1px solid #e1d5c1ce;
+    border-top: 1px solid #e1d5c1a2;
+    margin-top: 40px;
 }
 
 .footer__body {
@@ -313,16 +332,6 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 .fa {
     font-size: 30px;
     color: var(--main-brown);
-}
-
-.fa-whatsapp::before {
-    content: "\f232";
-    font-family: “FontAwesome; 
-    font: var(--fa-font-solid);
-}
-
-.fa-envelope::before {
-    content: "\f0e0";
 }
 
 
