@@ -24,9 +24,6 @@ body {
 :root {
     --main-brown: #3b2f17;
     --main-beige: #ede0da;
-    --main-blue: #1488DC;
-    --main-black: #1B1B1B;
-    --main-gray: #686868;
 }
 
 a, button {
@@ -84,6 +81,12 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     font-size: 4rem;
 }
 
+.subtitle {
+    font-weight: 600;
+    font-family: 'Playfair Display';
+    font-size: 3rem;
+}
+
 .hover-under {
     border-bottom: 1px solid transparent;
     transition: all 0.3s;
@@ -131,6 +134,7 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     background-color: var(--main-beige);
     width: 100%;
     position: fixed;
+    z-index: 10;
 }
 
 .header__body {
@@ -166,7 +170,6 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 }
 
 .main__who-left {
-    gap: 20px;
     display: flex;
     flex-direction: column;
     max-width: 50%;
@@ -174,20 +177,28 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     text-align: center;
 }
 
+.main__who-quote {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 .main__who {
 }
 
 .main__who-btn {
     color: var(--main-brown);
-    padding: 10px 5px;
+    padding: 15px 10px;
     border: 1px solid var(--main-brown);
     max-width: fit-content;
     font-size: 1.8rem;
-    border-radius: 4px
+    border-radius: 2px
 }
 
 .main__who-btn:hover {
-    background-color: #c4b29a;
+    background-color: var(--main-brown);
     color: var(--main-beige);
 }
 
@@ -236,19 +247,34 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     align-items: center;
     gap: 20px;
     max-width: 50%;
+    position: relative;
+}
+
+.quote-top {
+    top: 12%;
+    left: 30%;
+    position: absolute;
+    z-index: 10;
+}
+
+.quote-bottom {
+    bottom: -5%;
+    right: 30%;
+    position: absolute; 
+    z-index: 10;
 }
 
 .reviews__name {
-    font-weight: 600;
-    font-family: 'Playfair Display';
+    font-family: 'Nunito Sans';
     font-size: 2rem;
+    color: #b09a90;
 }
 
 .reviews__txt {
     max-width: 50%;    
     border: 1px solid var(--main-beige);
-    padding: 10px;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 1px;
 }
 
 .slick-slider {
@@ -297,6 +323,10 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     border-top: none;
     border-right: none;
     background-color: transparent;
+}
+
+.reviews__slider  .slick-list {
+    padding: 20px;
 }
 
 /* Footer */
