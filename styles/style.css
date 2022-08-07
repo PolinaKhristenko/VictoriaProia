@@ -174,7 +174,6 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 
 
 .main {
-    margin-top: 130px;
 }
 
 .main__who-left {
@@ -194,7 +193,10 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 }
 
 .main__who {
-    margin-bottom: 80px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .main__who-btn {
@@ -215,6 +217,19 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.main__who-down {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    transition: all 0.3s;
+    padding: 10px;
+}
+
+.main__who-down:hover {
+    transform: translate(0, 10px);
 }
 
 .main__who-img {
@@ -417,6 +432,71 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     font-size: 2rem;
 }
 
+
+.main__tour-body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.main__tour-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main__tour-txt {
+}
+
+.main__tour-quote {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main__tour-imgs {
+    display: flex;
+    gap: 20px;
+}
+
+.main__tour-img {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main__tour-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__click {
+    margin-top: 40px;
+}
+
+.main__click-body {
+    background-image: url('../src/car2.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+.main__click-txt {
+    font-size: 2.5rem;
+    color: rgb(233, 223, 204);
+    text-transform: uppercase;
+    text-align: center;
+}
+.main__click-btn {
+}
+
 /* Footer */
 
 
@@ -450,6 +530,11 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 .fa {
     font-size: 30px;
     color: var(--main-brown);
+}
+
+.fa-arrow-down {
+   color: #d6bbae;
+   font-size: 40px;
 }
 
 
