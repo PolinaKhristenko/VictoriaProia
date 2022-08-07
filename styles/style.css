@@ -193,6 +193,7 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 }
 
 .main__who {
+    margin-bottom: 80px;
 }
 
 .main__who-btn {
@@ -324,6 +325,56 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 
 .reviews__slider  .slick-list {
     padding: 20px;
+}
+
+
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cards__block {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.cards__block:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.cards__img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.cards__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.cards__place {
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+.cards__time {
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+.cards__price {
+    font-weight: 600;
 }
 
 /* Footer */
