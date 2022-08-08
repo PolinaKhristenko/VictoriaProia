@@ -16,6 +16,8 @@
     <meta property="og:url" content=""> <!--Заполнить-->
 
     <script src="https://kit.fontawesome.com/e2fc66c71e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!--Slider-->
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,10 +85,33 @@
                 </div>
             </div>
         </footer>
+
+        <div class="tour__modal">
+            <div class="tour__modal-body">
+                <div class="tour__modal-block">
+                    <a class="modal__close">&times;</a>
+                    <h2 class="tour__title subtitle"></h2>
+                    <p class="tour__time"></p>
+                    <p class="tour__price"></p> 
+                    <div class="tour__imgs"></div>
+                    <p class="tour__body"></p>
+                    <a href="mailto:proiavictoria123@gmail.com?subject=Экскурсия" class="main__who-btn margin">Заказать экскурсию</a>
+                </div>
+            </div>
+        </div>
     </div>
     
+      <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Slick Slider CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="../js/tours.js"></script>
+    <script src="../js/slider.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>
