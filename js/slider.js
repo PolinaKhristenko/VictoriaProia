@@ -3,6 +3,11 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1
     });
+
+    $('.about__slider-body').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
   });  
   
   

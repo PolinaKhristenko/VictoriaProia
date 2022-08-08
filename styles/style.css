@@ -209,7 +209,8 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     border: 1px solid var(--main-brown);
     max-width: fit-content;
     font-size: 1.8rem;
-    border-radius: 2px
+    border-radius: 2px;
+    background: white;
 }
 
 .main__who-btn:hover {
@@ -252,11 +253,10 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 }
 
 .reviews {
-    margin-top: 40px;
+    margin: 80px 0;
 }
 
 .reviews__body {
-    margin-top: 40px;
 }
 
 .reviews__block {
@@ -450,7 +450,7 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 .main__tour-block {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
 }
 
 .main__tour-txt {
@@ -471,6 +471,31 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     height: 300px;
     width: 100%;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+}
+
+.main__tour-img-txt {
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000005c;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    cursor: default;
+}
+
+.main__tour-img-txt:hover {
+    background-color: transparent;
 }
 
 .main__tour-img img {
@@ -491,16 +516,44 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding: 30px;
+    
 }
+
+.main__click-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0000002e;
+    padding: 150px 100px;
+}
+
 .main__click-txt {
     font-size: 2.5rem;
-    color: rgb(233, 223, 204);
+    color: white;
+    font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+
 }
+
 .main__click-btn {
+    padding: 20px 15px;
+    border: 2px solid white;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+    background-color: transparent;
+}
+
+.main__click-btn:hover {
+    background-color: white;
+    color: black;
 }
 
 
@@ -593,6 +646,69 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 }
 
 .tour__body {
+}
+
+
+
+/* About */
+
+.about {
+    margin-top: 120px;
+}
+
+.about__a {
+    text-decoration: underline;
+    transition: all 0.3s;
+    margin-top: 5px;
+}
+
+.about__a:hover {
+    opacity: 0.7;
+}
+
+.about__body {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about__slider {
+    width: 600px;
+}
+
+.about__cols {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: space-between
+}
+
+.about__txt-right {
+    margin-top: 20px;
+}
+
+.about__col {
+    width: 50%;
+}
+
+.about__slider p {
+    margin-left: 50px;
+}
+
+
+.about__slider-body {
+    padding: 30px;
+}
+
+.about__slider-img {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.about__slider-body img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 

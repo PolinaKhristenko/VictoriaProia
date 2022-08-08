@@ -247,8 +247,6 @@ const tours = [
 ]
 
 
-// Cards info 
-
 
 tours.forEach(tour => {
 	let card = document.querySelector('.cards')
