@@ -114,7 +114,7 @@ const tours = [
 tours.forEach(tour => {
 	let card = document.querySelector('.cards')
   
-    if (tour.id && tour.img && tour.title && tour.place && tour.time && tour.price) {
+    if (tour.id && tour.img && tour.title) {
         card.innerHTML += `
         <a class="cards__block" id="${tour.id}">
             <div class="cards__img">
