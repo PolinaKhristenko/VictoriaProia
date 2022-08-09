@@ -1,3 +1,4 @@
+
 /* General */ 
 
 
@@ -79,12 +80,14 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     font-weight: 600;
     font-family: 'Playfair Display';
     font-size: 4rem;
+    text-align: center;
 }
 
 .subtitle {
     font-weight: 600;
     font-family: 'Playfair Display';
     font-size: 3rem;
+    text-align: center;
 }
 
 .hover-under {
@@ -239,6 +242,8 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
 
 .main__who-img {
     border-radius: 50%;
+    width: 400px;
+    height: 400px;
 }
 
 .main__who-title {
@@ -347,7 +352,18 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     padding: 20px;
 }
 
+.slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: -5%;
+    left: 45%;
+    list-style: disc !important; 
+}
 
+.slick-dots li,
+.slick-dots li button {
+    list-style: disc;
+}
 
 
 /* Cards */
@@ -725,6 +741,7 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    align-items: center;
 }
 
 .footer__copyright {
@@ -761,17 +778,116 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     .container {
         max-width: 992px;
     }
+
+    .reviews__txt {
+        max-width: 60%;
+    }
+
+    .main__tour-img-txt {
+        font-size: 2.5rem;
+    }
+
+    .main__who-img {
+        width: 350px;
+        height: auto;
+    }
+
+    .tour__img {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media screen and (max-width: 992px) { 
+
     .container {
         max-width: 768px;
     }
+
+    html {
+        font-size: 9px;
+    }
+
+    .tours__about {
+        flex-direction: column;
+        margin-top: 90px;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tours__about-block {
+        border: none;
+    }
+
+    .tours__about-img img {
+        position: static;
+    }
+
+    .tours__about-img {
+        position: static;
+        width: 300px;
+        height: 300px;
+        align-self: center;
+    }
+
+    .tours__about-block {
+        padding-left: 0;
+    }
+
+
 }
 
 @media screen and (max-width: 768px) { 
     .container {
         max-width: 576px;
+    }
+    
+    html {
+        font-size: 8px;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+
+    .handwtiting {
+        display: none;
+    }
+
+    .main__tour-img {
+        height: 200px;
+    }
+
+    .main__tour-imgs {
+        gap: 5px;
+    }
+
+    .main__tour-img-txt {
+        font-size: 2rem;
+    }
+
+    .main__click-body {
+        background-size: cover;
+    }
+
+    .footer {
+        padding: 10px 5px;
+    }
+
+    .line-right, .line-left {
+        width: 100px;
+    }
+
+    .line-right {
+        margin-left: 10px;
+    }
+
+    .line-left {
+        margin-right: 10px;
+    }
+
+    .cards__block {
+        box-shadow: 0 0 10px rgb(0 0 0 / 50%);
     }
 }
 
@@ -779,5 +895,33 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     .container {
         max-width: 100%;
         padding: 0 20px;
+    }
+
+    .footer__contacts {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .main__tour-imgs {
+        flex-wrap: wrap;
+    }
+
+    .main__tour-img {
+        height: 250px;
+    }
+
+    .main__click-body {
+        background-position: right;
+    }
+
+    .footer__body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tours__about-img {
+        width: 250px;
+        height: 250px;
+        flex: 0 0 0;
     }
 }
