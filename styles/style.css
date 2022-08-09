@@ -889,6 +889,29 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     .cards__block {
         box-shadow: 0 0 10px rgb(0 0 0 / 50%);
     }
+
+    .main__who-body {
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+
+    .main__who-left {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .group__title {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 680px) { 
+    .tour__img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -923,5 +946,26 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
         width: 250px;
         height: 250px;
         flex: 0 0 0;
+    }
+
+    .main__who-img {
+        width: 300px;
+    }
+
+    .main__who {
+        margin-top: 0;
+    }
+
+    .tour__modal-body {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .tour__imgs {
+        margin: 0;
+    }
+
+    .tour__modal-body {
+        padding: 10px;
     }
 }
