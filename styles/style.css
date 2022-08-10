@@ -352,19 +352,6 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     padding: 20px;
 }
 
-.slick-dots {
-    display: flex;
-    position: absolute;
-    bottom: -5%;
-    left: 45%;
-    list-style: disc !important; 
-}
-
-.slick-dots li,
-.slick-dots li button {
-    list-style: disc;
-}
-
 
 /* Cards */
 
@@ -727,6 +714,39 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     object-fit: cover;
 }
 
+.slick-dots {
+    list-style: disc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.slick-dots li {
+    list-style: none;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active {
+    opacity: 0.5;
+}
+
+/* Элемент точки */
+.slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-brown);
+    border-radius: 50%;
+    padding: 0;
+}
+
+
+
 
 /* Footer */
 
@@ -780,7 +800,7 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     }
 
     .reviews__txt {
-        max-width: 60%;
+        max-width: 70%;
     }
 
     .main__tour-img-txt {
@@ -833,7 +853,6 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     .tours__about-block {
         padding-left: 0;
     }
-
 
 }
 
@@ -905,6 +924,31 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
         margin-top: 20px;
     }
 
+    .reviews__txt {
+        max-width: 100%;
+    }
+
+    .quote-bottom {
+        right: 20%;
+    }
+
+    .quote-top {
+        left: 20%;
+        top: 9%;
+    }
+
+    .main__tour-body {
+        margin-bottom: 20px;
+    }
+
+    .reviews__block {
+        margin: 30px;
+    }
+
+    .reviews {
+        margin: 40px 0;
+    }
+
 
 }
 
@@ -949,7 +993,7 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     }
 
     .main__who-img {
-        width: 300px;
+        width: 250px;
     }
 
     .main__who {
@@ -968,4 +1012,14 @@ a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     .tour__modal-body {
         padding: 10px;
     }
+
+    .quote-bottom,
+    .quote-top {
+        visibility: hidden;
+    }
+
+    .line-right, .line-left {
+        width: 80px;
+    } 
+
 }
